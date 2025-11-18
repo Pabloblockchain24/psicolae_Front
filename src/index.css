@@ -1,0 +1,23 @@
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Great Vibes', sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #5FBFF9;
+  --secondary: #212738;
+  --tertiary : #f4fbff;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

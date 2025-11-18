@@ -1,0 +1,100 @@
+.calendarContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hoursContainer {
+  padding-block: 2rem;
+  background-color: #fff;
+}
+
+.calendarContainer h2{
+  font-size: medium;
+  padding-bottom: 1rem;
+}
+
+.hoursContent{
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hoursContent h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.hoursList {
+  list-style-type: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hourItem {
+  font-size: 1rem;
+  padding: 0.75rem;
+  background-color: #f0f8ff; 
+  margin-bottom: 0.5rem;
+  border: 1px solid #e1e1e1; 
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.hourItem:hover {
+  background-color: #e0e0e0; 
+}
+
+.hourItem.selected {
+  background-color: #4caf50;
+  color: white;
+  border-color: #388e3c;
+}
+
+.noHoursMessage {
+  font-size: 16px;
+  color: #777;
+  text-align: center; 
+  margin: 0;
+}
+
+.available {
+  background-color: #7ce093;
+  color: #155724;
+}
+
+.available:hover, .unavailable:hover {
+  border: var(--primary) 2px solid !important;
+}
+
+.unavailable {
+  background-color: #dac8c9; 
+  color: #721c24; 
+}
+
+
+@media (max-width: 768px) { 
+  .calendarContainer{
+    padding-inline: 2rem;
+
+  }
+  .calendarContent{
+    width: 100%;
+}
+}
+
+@media (max-width: 500px) { 
+  .calendarContainer{
+    padding-inline: 1rem;
+  }
+ 
+}

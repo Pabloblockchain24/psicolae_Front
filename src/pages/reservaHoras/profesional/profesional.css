@@ -1,0 +1,53 @@
+.profesionalesContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    padding-inline: 7rem;
+}
+
+.citasCardLoader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+
+}
+
+@media (max-width: 1400px) {
+    .profesionalesContainer{
+        padding-inline: 5rem;
+   }
+  
+}
+
+@media (max-width: 1200px) {
+    .profesionalesContainer{
+        padding-inline: 4rem;
+   }
+  
+}
+
+@media (max-width: 998px) {
+    .profesionalesContainer{
+        padding-inline: 3rem;
+   }
+  
+}
+
+@media (max-width: 768px) {
+    .profesionalesContainer{
+        padding-inline: 2rem;
+   }
+  
+}
+
+@media (max-width: 500px) {
+    .profesionalesContainer{
+        padding-inline: 1.5rem;
+        gap: 2rem;
+        padding-bottom: 1.5rem;
+   }
+
+
+}

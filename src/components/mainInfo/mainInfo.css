@@ -1,0 +1,128 @@
+/* Estilos para la sección principal de información */
+
+/* ------------------------------------------- */
+/* 1. CONTENEDOR PRINCIPAL Y TÍTULO */
+/* ------------------------------------------- */
+
+.mainInfoContainer {
+    padding: 4rem 0rem;
+    background-color: #fcfafa; /* Fondo muy claro, con un toque cálido (minimalista/rústico) */
+    text-align: center;
+}
+
+.mainInfoTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #334e68; /* Color oscuro y profesional */
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+/* Línea sutil bajo el título para énfasis */
+.mainInfoTitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #a0a0a0; /* Gris suave, toque rústico */
+    border-radius: 2px;
+}
+
+/* ------------------------------------------- */
+/* 2. CONTENEDOR DE LAS TARJETAS (GRID) */
+/* ------------------------------------------- */
+
+.mainInfo {
+    display: grid;
+    /* 3 columnas iguales para desktop */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem; /* Espacio entre las tarjetas */
+    max-width: 1200px; /* Limita el ancho para centrar el contenido */
+    margin: 0 auto;
+}
+
+/* ------------------------------------------- */
+/* 3. ESTILO DE LA TARJETA (RÚSTICO/MINIMALISTA) */
+/* ------------------------------------------- */
+
+.mainInfoCard {
+    background-color: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+
+    /* Estructura interna: Icono y texto alineados horizontalmente */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Centra el icono */
+    text-align: center;
+}
+
+/* Efecto hover sutil */
+.mainInfoCard:hover {
+    transform: translateY(-5px); /* Pequeño levantamiento */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.mainInfoIcon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    /* Estilo sutil de borde para el toque rústico/premium */
+    border: 3px solid #e0e0e0;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.mainInfoCard h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #585655; /* Color de acento profesional */
+    margin-bottom: 0.75rem;
+}
+
+.mainInfoCard p {
+    font-size: 0.9rem;
+    color: #5a6e81; /* Texto secundario más suave */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ------------------------------------------- */
+/* 4. RESPONSIVIDAD (TABLET Y MÓVIL) */
+/* ------------------------------------------- */
+
+/* Para Tablet (menos de 1024px) - 2 columnas */
+@media (max-width: 1024px) {
+    .mainInfo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Para Móvil (menos de 768px) - 1 columna */
+@media (max-width: 768px) {
+    .mainInfoContainer {
+        padding: 4rem 1rem;
+    }
+    
+    .mainInfo {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .mainInfoTitle {
+        font-size: 2rem;
+    }
+    
+    /* En móvil, las tarjetas pueden ser más simples sin el efecto 3D */
+    .mainInfoCard {
+        padding: 1.5rem;
+    }
+}

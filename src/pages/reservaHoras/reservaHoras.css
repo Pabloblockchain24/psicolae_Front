@@ -1,0 +1,162 @@
+.citasContainer {
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 5rem;
+}
+
+.citasContent{
+    width: 100%;
+    padding-inline: 18rem;
+}
+
+.citasCard {
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+    padding-block: 3rem;
+}
+
+.citasCardTitle{
+    font-size: large;
+    font-weight: 600;
+    color: var(--secondary);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-inline: 1rem;
+    text-align: center; 
+}
+
+.formNavigationContainer{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1.5rem;
+    width: 100%;
+    padding-inline:6rem;
+
+}
+
+.citasCardButton{
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 600;
+    font-size: medium; 
+    cursor: pointer;
+    width: 10rem;
+}
+
+.citasCardButtonBack{
+    padding: 1rem;
+    border: none;
+    background-color: rgb(143, 141, 141);
+    color: white;
+    font-weight: 600;
+    font-size: medium; 
+    cursor: pointer;
+    width: 10rem;
+}
+.citasCardButtonBack:hover{
+    background-color: rgb(31, 31, 31);
+}
+
+.citasCardButton:disabled {
+    background-color: #ccc; 
+    color: #999; 
+    cursor: not-allowed;
+  }
+
+  .citasCardButton:hover:enabled {
+    background-color: #375daf;
+  }
+  
+
+  @media (max-width: 1400px) {
+    .citasContent{
+        padding-inline: 14rem;
+    }
+    .formNavigationContainer{
+        padding-inline: 4rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .citasContent{
+        padding-inline: 12rem;
+    }
+}
+
+@media (max-width: 998px) {
+    .citasContent{
+        padding-inline: 8rem;
+    }
+    .formNavigationContainer{
+        padding-inline: 4rem;
+    }
+    
+
+}
+
+@media (max-width: 768px) {
+    .citasContent{
+        padding-inline: 4rem;
+ }
+
+ .formNavigationContainer{
+    padding-inline: 3rem;
+}
+
+.citasCardButton, .citasCardButtonBack{
+    padding: 0.75rem;
+    font-size: small; 
+    width: 7rem;
+}
+
+}
+
+@media (max-width: 500px) { 
+    .citasContent{
+        padding-inline: 3rem;
+    }
+    .citasContainer {
+        padding-block: 2rem;
+    }
+    .formNavigationContainer{
+        padding-block: 0.5rem;
+    }
+}
+
+@media (max-width: 450px) { 
+    .citasContent{
+        padding-inline: 2rem;
+    }
+
+    .citasCardButton{
+        width: 8rem;
+        padding: 0.75rem; 
+    }
+    .citasCardTitle{
+        font-size: small;
+    }
+
+    .citasCardButton, .citasCardButtonBack{
+        padding: 0.5rem;
+        font-size: small; 
+        width: 6rem;
+    }
+
+    .formNavigationContainer{
+        padding-inline:1.5rem;
+    }
+    
+    
+}
