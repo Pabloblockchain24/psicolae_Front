@@ -33,8 +33,14 @@ function Home() {
             En un mundo donde la "terapia" está de moda, es fácil sentirse confundido o abrumado. Si buscas resultados concretos y un camino claro sin rodeos, has llegado al lugar correcto.
             Soy Nicolae Carrasco, psicólogo clínico con 5 años de experiencia dedicado a la psicología clínica, y ofrezco Asesoría Psicológica—un modelo diseñado para la vida actual.</p>
 
-            <NavLink to="/reservarHora" className="homeButtonReserva"> Reserva tu hora </NavLink>
-          </div>
+            <a
+              href="https://wa.me/56926061550?text=Hola,%20necesito%20información"
+              className="homeButtonReserva"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Reserva tu hora
+            </a>          </div>
           {/* <button className="scrollDownButton" onClick={scrollToInfo}>
             <FaArrowDown className="scrollDownIcon" />
           </button> */}
