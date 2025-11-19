@@ -1,5 +1,3 @@
-/*import dependencies*/
-import { NavLink } from "react-router-dom";
 
 /*import styles*/
 import "./home.css";
