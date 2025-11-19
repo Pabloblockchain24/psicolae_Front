@@ -2,7 +2,7 @@
 import './footer.css';
 
 /*Import icons */
-import { FaFacebook, FaInstagram, FaLinkedin, FaPhone } from "react-icons/fa";
+import { FaTiktok , FaInstagram, FaLinkedin, FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaXTwitter, FaLocationDot } from "react-icons/fa6";
 
@@ -12,7 +12,7 @@ function Footer() {
       <section className="footerSection">
 
         <article className="footerAbout">
-          <img src="/logonicolae.jpg" alt="Logo Clinica" className="footerLogo" />
+          <img src="/imgNicolae.jpg" alt="Logo Clinica" className="footerLogo" />
         </article>
 
         <article className="footerContact">
@@ -26,6 +26,8 @@ function Footer() {
           <h3>Sígueme</h3>
           <div className="footerSocialIcons">
             <a href="https://www.linkedin.com/in/nicolae-ignacio-carrasco-c-82200916a?utm_source=share_via&utm_content=profile&utm_medium=member_ios">  <FaLinkedin /> </a>
+            <a href="https://www.tiktok.com/@psico.lae?_r=1&_t=ZM-91WwasrdZH9" >  <FaTiktok /> </a>
+
           </div>
         </article>
 
