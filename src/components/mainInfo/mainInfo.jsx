@@ -4,7 +4,7 @@ import './mainInfo.css';
 function MainInfo() {
   return (
     <section className='mainInfoContainer' id="info"> 
-      <h2 className="mainInfoTitle">¿Por qué elegir deberias tomar una Asesoría en Salud Mental?</h2>
+      <h2 className="mainInfoTitle">¿Por qué deberias tomar una Asesoría en Salud Mental?</h2>
 
       <section className="mainInfo">
         <article className="mainInfoCard">
